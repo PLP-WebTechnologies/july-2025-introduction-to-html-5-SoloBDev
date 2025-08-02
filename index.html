@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about modern web development with our guide to HTML5 semantic markup, accessibility best practices, and SEO fundamentals.">
+    <meta name="keywords" content="HTML5, web accessibility, SEO, semantic HTML, web development">
+    <meta name="author" content="Web Development Team">
+    <title>HTML5 Semantics, Accessibility & SEO Guide | Web Dev Fundamentals</title>
+    
+    <!-- Canonical URL to prevent duplicate content issues -->
+    <link rel="canonical" href="https://example.com/index.html">
+    
+    <!-- Favicon for better brand recognition -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Preload important resources -->
+    <link rel="preload" as="image" href="hero-image.webp">
+</head>
+
+<body>
+    <!-- Skip to main content link for keyboard users -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header role="banner">
+        <h1>Web Development Fundamentals</h1>
+        <p>Mastering HTML5, Accessibility & SEO</p>
+        
+        <nav aria-label="Primary navigation">
+            <h2 class="visually-hidden">Main Menu</h2>
+            <ul>
+                <li><a href="#semantics">HTML5 Semantics</a></li>
+                <li><a href="#accessibility">Accessibility</a></li>
+                <li><a href="#seo">SEO Basics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <article>
+            <section id="semantics" aria-labelledby="semantics-heading">
+                <h2 id="semantics-heading">HTML5 Semantic Structure</h2>
+                <p>Semantic HTML provides meaning to web content, making it more accessible and SEO-friendly.</p>
+                
+                <section>
+                    <h3>Key Semantic Elements</h3>
+                    <ul>
+                        <li><code>&lt;header&gt;</code> - Introductory content</li>
+                        <li><code>&lt;nav&gt;</code> - Navigation links</li>
+                        <li><code>&lt;main&gt;</code> - Primary content</li>
+                        <li><code>&lt;article&gt;</code> - Self-contained composition</li>
+                        <li><code>&lt;section&gt;</code> - Thematic grouping</li>
+                        <li><code>&lt;footer&gt;</code> - Closing content</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section id="accessibility" aria-labelledby="accessibility-heading">
+                <h2 id="accessibility-heading">Web Accessibility</h2>
+                <p>Accessibility ensures your website can be used by everyone, including people with disabilities.</p>
+                
+                <section>
+                    <h3>Accessibility Best Practices</h3>
+                    <ol>
+                        <li>Use proper heading hierarchy</li>
+                        <li>Provide text alternatives for images</li>
+                        <li>Ensure sufficient color contrast</li>
+                        <li>Make all functionality keyboard accessible</li>
+                        <li>Use ARIA landmarks when appropriate</li>
+                    </ol>
+                </section>
+            </section>
+
+            <section id="seo" aria-labelledby="seo-heading">
+                <h2 id="seo-heading">Search Engine Optimization</h2>
+                <p>SEO helps your content get discovered through organic search results.</p>
+                
+                <figure>
+                    <img src="seo-diagram.webp" alt="SEO ranking factors diagram showing content quality, keywords, and backlinks" width="600" height="400" loading="lazy">
+                    <figcaption>Key factors that influence search rankings</figcaption>
+                </figure>
+                
+                <section>
+                    <h3>On-Page SEO Techniques</h3>
+                    <dl>
+                        <dt>Title Tags</dt>
+                        <dd>Keep under 60 characters, include primary keywords</dd>
+                        
+                        <dt>Meta Descriptions</dt>
+                        <dd>Compelling summaries under 160 characters</dd>
+                        
+                        <dt>Heading Structure</dt>
+                        <dd>Logical hierarchy with relevant keywords</dd>
+                        
+                        <dt>Semantic HTML</dt>
+                        <dd>Helps search engines understand content</dd>
+                    </dl>
+                </section>
+            </section>
+        </article>
+
+        <aside aria-labelledby="related-heading">
+            <h2 id="related-heading">Related Resources</h2>
+            <ul>
+                <li><a href="https://www.w3.org/WAI/" rel="noopener noreferrer">Web Accessibility Initiative</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" rel="noopener noreferrer">MDN HTML Documentation</a></li>
+                <li><a href="https://developers.google.com/search/docs" rel="noopener noreferrer">Google Search Documentation</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer role="contentinfo">
+        <h2 class="visually-hidden">Footer Information</h2>
+        <address>
+            Contact us at <a href="mailto:info@example.com">info@example.com</a><br>
+            123 Web Dev Lane, Internet City
+        </address>
+        <p>&copy; <time datetime="2023">2023</time> Web Development Fundamentals. All rights reserved.</p>
+        
+        <nav aria-label="Legal and secondary navigation">
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- Hidden content for screen readers only -->
+    <div class="visually-hidden">
+        <span id="page-structure-description">This page uses semantic HTML5 elements with proper heading hierarchy and ARIA landmarks for improved accessibility.</span>
+    </div>
+</body>
+</html>
